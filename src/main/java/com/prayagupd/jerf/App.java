@@ -24,7 +24,7 @@ public class App {
 
     public static void listPerf() {
 
-        List<Ad> ads = IntStream.range(1, 100000).collect(
+        List<Ad> ads = IntStream.range(1, 1000000).collect(
                 () -> new ArrayList<Ad>(),
                 (acc, elem) -> acc.add(
                         new Ad(
@@ -46,7 +46,7 @@ public class App {
         System.out.println("unique adIds " + uniqueAdIds.count());
         var timeTaken = System.currentTimeMillis() - start;
 
-        System.out.println("time taken " + timeTaken + " ms");
+        System.out.println("time taken " + timeTaken + " ms"); //time taken 107 ms
     }
 
 }
