@@ -1,4 +1,4 @@
-package com.prayagupd.jerf;
+package com.upadhyay.jerf;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

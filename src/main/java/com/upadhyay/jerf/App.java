@@ -1,4 +1,4 @@
-package com.prayagupd.jerf;
+package com.upadhyay.jerf;
 
 import java.time.ZonedDateTime;
 import java.util.ArrayList;
@@ -7,6 +7,9 @@ import java.util.UUID;
 import java.util.stream.IntStream;
 
 public class App {
+
+    public static final int BILLION = 1_000_000_000;
+    public static final int MILLION = 1_000_000;
 
     public static void main(String[] args) {
 
@@ -24,7 +27,7 @@ public class App {
 
     public static void listPerf() {
 
-        List<Ad> ads = IntStream.range(1, 1000000).collect(
+        List<Ad> ads = IntStream.range(1, BILLION).collect(
                 () -> new ArrayList<Ad>(),
                 (acc, elem) -> acc.add(
                         new Ad(
